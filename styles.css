@@ -1,0 +1,408 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type:none;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+}
+
+/* HEADER-NAVEGACION */
+
+header{
+    background-color: rgb(56, 56, 56);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+header a{
+    color: white;
+}
+
+.logo{
+    display: inline block;
+    font-size: 30px;
+    line-height: 80px;
+    padding: 0 30px;
+    font-weight: bold;
+}
+
+header nav {
+    height: 80px;
+    float: right;
+  }
+
+nav ul.menu {
+  float: right;
+  margin-right: 0.5em;
+}
+
+nav ul.menu li {
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+}
+
+nav ul.menu li a {
+  color: #eee;
+  font-size: 15px;
+  text-transform: uppercase;
+  padding: 7px 7px;
+}
+
+/* MENU */
+.checkbtn{
+    font-size: 25px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+/* SECCION 1*/
+
+.acerca-de{
+    text-align: right;
+    padding: 3em;
+}
+
+section.seccion-1{
+    background-color: rgb(245, 237, 227);
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 2em;
+    text-align: justify;
+}
+
+div.acerca-imagen img{
+    border-radius: 30px;
+    width: 100%;
+}
+
+/* SECCION 2*/
+
+section.seccion-2 img{
+    width: 100%;
+}
+
+/* SECCION 3 - TRABAJOS */
+
+section.seccion-3{
+    background-color: rgb(245, 237, 227);
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 2em;
+}
+
+.trabajos {
+
+    color: rgb(206, 160, 76);
+    margin: 0.5em 0;
+    width: 100%;
+}
+
+.trabajos-container{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.titulo-container {
+    margin: 5px;
+    width: 400px;
+    display: flex;
+    justify-content: center;
+  }
+
+div.image-container img{
+    border-radius: 20px;
+    width: 300px;
+    height: 200px;
+}
+
+.titulo{
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    justify-content: space-evenly;
+}
+
+div.titulo h4{
+    margin: 1em 0em 1em 0em;
+}
+
+.text{
+    display: flex;
+    width: 300px;
+    text-align: justify;
+    flex-direction: column;
+}
+
+div.titulo a{
+    margin: 0.5em 0em 0.5em 0em;
+    color: rgb(206, 160, 76);
+}
+
+/* FOOTER */
+
+#footer h3{
+    color: rgb(206, 160, 76);
+}
+
+footer{
+    background-color: rgb(56, 56, 56);
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+}
+
+footer a{
+    text-decoration: none;
+}
+
+#footer nav ul li{
+    margin-top: 0.3em;
+}
+
+#footer nav ul li a{
+    color: white;
+    padding: 0.5em;
+}
+
+a i.fa-solid.fa-cube.fixed{
+    color: rgb(206, 160, 76);
+    font-size: 1.5em;
+    position: fixed;
+    bottom: 22px;
+    right: 39px;
+}
+
+/* FORMULARIO */
+
+.form-header {
+    
+    text-align: center;      
+    border-radius: 3px;
+  
+    width: 80%;
+    margin: 10px auto;
+    padding: 50px;
+  }
+  
+  .form-header h1 {
+    color: rgb(206, 160, 76);
+    margin-bottom: 10px;
+  }
+
+  .form-header p{
+    font-size: 15px;
+    margin-bottom: 20px;
+  }
+  
+  /* ------------- Formulario ------------- */
+  
+  .formulario {
+    
+    border: 1px solid #d6d9dc;
+    border-radius: 3px;
+    margin: auto;
+    max-width: 500px;
+    width: 80%;
+    padding: 50px;
+    
+  }
+
+  /* ------------- Campos del Formulario ------------- */
+
+.form-row {
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+  }
+  
+  .form-row input[type="text"],
+  .form-row input[type="email"]{
+    background-color: rgb(245, 237, 227);
+    border: 0;
+    border-radius: 6px;
+    width: 100%;
+    padding: 7px;
+    font-size: 14px;
+  }
+  
+  .form-row label {
+    margin-bottom: 3px;
+    text-align: initial;
+  }
+
+  .form-row textarea {
+    font-family: "Helvetica", "Arial", sans-serif;
+    font-size: 14px;
+  
+  
+    background-color: rgb(245, 237, 227);
+    border: 0;
+    border-radius: 6px;
+  
+  
+    min-height: 200px;
+    margin-bottom: 10px;
+    padding: 7px;
+    resize: none;
+  
+  
+    width: 100%;
+  }
+
+  .form-row button {
+    font-size: 16px;
+    font-weight: bold;
+  
+  
+    color: #ffffff;
+    background-color: rgb(206, 160, 76);
+  
+  
+    border: none;
+    border-radius: 3px;
+  
+  
+    padding: 10px 40px;
+    cursor: pointer;
+    
+  }
+  
+  
+  .form-row button:hover {
+    background-color: rgb(219, 177, 97);
+  }
+  
+  
+  .form-row button:active {
+    background-color: rgb(177, 137, 62);
+  }
+
+
+
+
+/* MEDIA QUERIES */
+
+/* Estilos para pantallas más pequeñas (hasta 768px) */
+@media (max-width: 768px) {
+    /* Aquí puedes escribir los estilos que se aplicarán en pantallas más pequeñas */
+    header{
+        background-color:rgb(207, 171, 146);
+    }
+
+    .acerca-de{
+        text-align: center;
+    }
+
+    .acerca-imagen{
+        margin-bottom: 40px;
+    }
+
+    .checkbtn{
+        display: block;
+    }
+
+    .navbar {
+        height: 0vh;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        width: 100%;
+        background: #2c3e50;
+        text-align: center;
+    
+        transition: all 0.5s;
+        overflow: hidden;
+      }
+    
+      .navbar ul.menu {
+        float: none;
+        display: block;
+        width: 174px;
+        margin: 0 auto;
+        opacity: 0;
+      }
+    
+      .navbar ul.menu li a:hover {
+        color: #b59a61;
+      }
+      /* ACTIVE */
+      .navbar.active {
+        height: 100vh;
+      }
+    
+      .navbar.active ul.menu {
+        opacity: 1;
+      }
+
+    .titulo-container{
+        width: 300px;
+    }
+
+    .trabajos {
+        justify-content: center;
+    }
+
+    .trabajos-container{
+        align-items: center;
+        justify-content: center;
+    }
+
+    /* FORMS */
+    .formulario{
+        width: 100%;
+        padding: 20px;
+    }
+
+    .form-header {
+        padding: 1px;
+      }
+    
+      .form-row {
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: center;
+        margin-bottom: 20px;
+      }
+      .form-row input[type="text"],
+      .form-row input[type="email"] {
+        width: 100%;
+        height: initial;
+      }
+      .form-row label {
+        text-align: left;
+        width: 100%;
+        margin-top: 7px;
+        padding-right: 20px;
+      }
+      .form-row textarea {
+          width: 100%;
+      } 
+      .form-row button {
+          margin-left: none;
+          
+      }
+        
+
+}
